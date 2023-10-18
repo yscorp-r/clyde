@@ -4,7 +4,6 @@
 .sannrenn {
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 .launge {
   font-family: "Kaisei Tokumin", serif;
@@ -29,7 +28,6 @@ main section h2 {
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 67px;
   margin-bottom: 50px;
   padding-top: 17px;
   padding-bottom: 17px;
