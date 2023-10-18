@@ -1,0 +1,96 @@
+@import url(common.css);
+
+main article .oya {
+  margin-top: 67px;
+  display: flex;
+  border: 2px solid #4a4a4a;
+  gap: 30px;
+  padding-top: 40px;
+  color: #1d1502;
+
+  font-size: 16px;
+
+  font-weight: bold;
+  text-align: left;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+main article form .tatenarabi {
+  flex: 1;
+}
+main article form .kodomo {
+  flex: 1;
+}
+
+main article form .tatenarabi fieldset input {
+  color: #1d1502;
+  font-size: 16px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+main article form .tatenarabi fieldset legend {
+  margin-bottom: 15px;
+}
+main div .kodomo p {
+  margin-bottom: 15px;
+}
+
+main textarea {
+  height: 270px;
+  resize: vertical;
+  width: 100%;
+}
+
+main article form .kome {
+  text-align: right;
+}
+main article p button {
+  color: #fff;
+  background: #6b5311;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16.5px 62px;
+  margin-top: 54px;
+  border: none;
+}
+main form button:hover {
+  opacity: 0.7;
+}
+
+main article .housin {
+  font-size: 16px;
+  color: #fff;
+  background: #6b5311;
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 13px;
+  margin-bottom: 67px;
+}
+main article aside h2 {
+  padding-top: 13px;
+  margin-top: 54px;
+  border: none;
+}
+main article aside .jyouhou {
+  color: #fff;
+  border: none;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* レスポンシブ 991以下の時だけこのCSSを効かす */
+/* タブレット */
+@media (max-width: 991px) {
+}
+/* レスポンシブ 767以下の時だけこのCSSを効かす */
+/* スマホ */
+@media (max-width: 767px) {
+  main article .oya {
+    display: block;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+}

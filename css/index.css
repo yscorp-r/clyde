@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Kaisei+Tokumin:wght@700&display=swap");
+@import url(common.css);
+
+.sannrenn {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.launge {
+  font-family: "Kaisei Tokumin", serif;
+}
+
+.honnjituwaku {
+  border-bottom: 3px solid #000;
+  padding-bottom: 28px;
+  margin-bottom: 67px;
+  font-family: "Kaisei Tokumin", serif;
+}
+/*［main section h2の書式］文字サイズ:28px、太字、上下ボーダー（線幅:2px、線種:直線、線カラー:868686）、文字とボーダー間の余白:17px、外側下余白:px */
+
+main section p {
+  color: #1d1502;
+  text-align: left;
+  font-size: 20px;
+  border-bottom: 3px solid #333;
+  padding-bottom: 53px;
+}
+main section h2 {
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 67px;
+  margin-bottom: 50px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  border-top: 2px solid #868686;
+  border-bottom: 2px solid #868686;
+  font-size: 28px;
+  font-weight: bold;
+}
+main section ul li {
+  margin-bottom: 50px;
+}
+/* レスポンシブ 991以下の時だけこのCSSを効かす */
+/* タブレット */
+@media (max-width: 991px) {
+}
+
+/* レスポンシブ 　写真の表示を高さ300px右側表示（左が切れる）
+スマホALL Rights～ 削除*/
+
+p.tatemono img {
+  height: 300px;
+  object-fit: cover;
+  object-position: right;
+}
+@media (max-width: 767px) {
+  footer .sita span {
+    display: none;
+  }
+}

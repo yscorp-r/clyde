@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Arizonia&family=Kaisei+Tokumin:wght@700&display=swap");
+/* 自動スクロール */
+:root {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* デフォルトのテキストの書式 */
+  font-family: "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "MS PGothic", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+  /* ページの背景色 */
+  background-color: #fffdf8;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+header h1 {
+  margin-top: 23px;
+  margin-bottom: 29px;
+}
+
+/*［メニューの書式］上下ボーダー（線幅:2px、線種:直線、線カラー:#6a6a6a）、外側下余白:36px、中央揃え、内側上下余白:28px */
+nav {
+  background-color: rgba(255, 253, 248, 0.9);
+  color: #54410c;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #6a6a6a;
+  border-bottom: 2px solid #6a6a6a;
+  margin-bottom: 36px;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  position: sticky;
+  top: 0;
+}
+
+/*［メニュー項目の書式］FLEX BOXで表示、コンテナ幅はmain参照　中央配置　左右余白 */
+nav ul {
+  font-size: 18px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*［HOMEの書式］太字 */
+nav li.active a {
+  font-weight: bold;
+  color: #000;
+}
+
+/*［メニューのリンク文字のホバー設定］下線表示、不透明度:70% */
+header nav li a:hover {
+  text-decoration: underline;
+  opacity: 0.7;
+}
+
+.tatemono {
+  margin-bottom: 67px;
+}
+main {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*［大見出しの書式］文字色:#1D1502、文字サイズ:40px、太字、背景画像:、行の高さ:80px、背景画像:since.svg サイズ:NOR、背景画像位置:中央、内側左余白:30px、外側下余白:30px */
+main article h1 {
+  color: #1d1502;
+  font-size: 40px;
+  font-weight: bold;
+  background-image: url(../img/since\ 1.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 57px;
+  font-family: "Kaisei Tokumin", serif;
+}
+
+/*［main section h2の書式］文字サイズ:28px、太字、上下ボーダー（線幅:2px、線種:直線、線カラー:868686）、文字とボーダー間の余白:17px、外側下余白:px */
+
+main aside p :hover {
+  opacity: 0.7;
+}
+footer {
+  background-color: #322707;
+  color: #fffdf8;
+  margin-top: 83px;
+  padding-top: 42px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+footer section {
+  background-color: #5f4e1c;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer section h2 {
+  font-size: 20px;
+  padding-top: 11px;
+  color: #1d1502;
+}
+footer section p {
+  color: #1d1502;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 11px;
+}
+footer p.aikon {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+footer address {
+  margin-bottom: 30px;
+}
+footer p.sita {
+  background-color: #000;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* ページトップ位置　絶対配置の基準 */
+footer p.pgtop {
+  position: fixed;
+  right: 34px;
+  bottom: 34px;
+}
+/* レスポンシブ 767以下の時だけこのCSSを効かす */
+/* スマホ */
+@media (max-width: 767px) {
+  nav {
+    position: unset;
+  }
+  nav ul {
+    display: block;
+  }
+  nav li {
+    margin-bottom: 12px;
+  }
+}
