@@ -41,20 +41,16 @@ main section h2 {
 main section ul li {
   margin-bottom: 50px;
 }
-/* レスポンシブ 991以下の時だけこのCSSを効かす */
-/* タブレット */
-@media (max-width: 991px) {
-}
 
 /* レスポンシブ 　写真の表示を高さ300px右側表示（左が切れる）
 スマホALL Rights～ 削除*/
 
-p.tatemono img {
-  height: 300px;
-  object-fit: cover;
-  object-position: right;
-}
 @media (max-width: 767px) {
+  p.tatemono img {
+    height: 300px;
+    object-fit: cover;
+    object-position: right;
+  }
   footer .sita span {
     display: none;
   }
