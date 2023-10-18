@@ -24,7 +24,7 @@ header h1 {
 /*［メニューの書式］上下ボーダー（線幅:2px、線種:直線、線カラー:#6a6a6a）、外側下余白:36px、中央揃え、内側上下余白:28px */
 nav {
   background-color: rgba(255, 253, 248, 0.9);
-  color: red;
+  color: #54410c;
   border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #6a6a6a;
